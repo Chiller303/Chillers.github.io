@@ -1,0 +1,265 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f6f8;
+}
+
+/* Encabezado */
+header {
+    background-color: #008cba;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header .logo {
+    height: 100px; /* Tamaño del logo ajustado */
+    width: auto;
+}
+
+/* Efecto de texto congelado */
+header h1 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 15px #80dfff;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #80dfff;
+}
+
+/* Secciones */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Cuadrícula de servicios */
+.service-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    max-width: 250px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #008cba;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+/* Pie de página */
+footer {
+    background-color: #004d66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo de la información de contacto */
+.contact-info {
+    background-color: #e6f7ff;
+    border: 1px solid #b3e0ff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #004d66;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Contenedor principal */
+#about {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo para el título centrado */
+.title {
+    font-size: 24px;
+    color: #1c3c93;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la descripción general */
+.description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Estilo para la lista de características */
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+    text-align: left;
+}
+
+.features li:before {
+    content: '✓';
+    color: #1c3c93;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Ajustes para pantallas de tablets */
+@media (max-width: 1024px) {
+    header .logo {
+        height: 80px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .carousel {
+        width: 90%;
+    }
+
+    .service {
+        max-width: 200px;
+    }
+}
+
+/* Ajustes para pantallas de móviles */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo {
+        height: 70px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .service-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .service {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description, .features li {
+        font-size: 14px;
+    }
+}
+
